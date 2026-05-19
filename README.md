@@ -10,13 +10,13 @@ git clone https://github.com/RachelXiaolan/feedmob-publish.git ~/.claude/skills/
 
 ## 首次使用：注册
 
-打开注册页面，用 @feedmob.com 邮箱验证身份：
+打开注册页面，使用公司 Google 账号登录即可完成注册：
 
 https://feedmob-publish.rachel-lu.workers.dev/register
 
-1. 输入名字和公司邮箱
-2. 收到验证码后输入
-3. 页面会显示你的 API Key（点击可复制）
+1. 点击链接 → 使用 @feedmob.com Google 账号登录
+2. 输入你的名字
+3. 页面显示 API Key（点击可复制）
 
 然后添加到 shell 配置：
 
@@ -37,4 +37,10 @@ source ~/.zshrc
 
 ## 访问控制
 
-发布后的页面链接只有 @feedmob.com 邮箱才能访问（打开链接时需要邮箱 OTP 验证，24 小时内有效）。
+发布后的页面链接只有 @feedmob.com 的同事才能访问（打开链接时需要 Google 账号登录验证，24 小时内有效）。
+
+## 管理后台
+
+管理员可通过以下页面查看发布记录和访问日志：
+
+https://feedmob-publish.rachel-lu.workers.dev/admin

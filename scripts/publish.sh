@@ -41,7 +41,7 @@ fi
 RESPONSE=$(curl -s -w "\n%{http_code}" -X POST "$API_URL/api/publish" \
   -H "Authorization: Bearer $API_KEY" \
   -F "file=@$FILE_PATH" \
-  -F "title=$TITLE" \
+  -F "title=$TITLE;type=text/plain;charset=utf-8" \
   -F "access_level=$ACCESS_LEVEL")
 
 HTTP_CODE=$(echo "$RESPONSE" | tail -1)
