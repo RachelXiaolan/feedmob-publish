@@ -10,13 +10,13 @@ git clone https://github.com/RachelXiaolan/feedmob-publish.git ~/.claude/skills/
 
 ## 首次使用：注册
 
-运行注册脚本，用 @feedmob.com 邮箱验证身份：
+打开注册页面，用 @feedmob.com 邮箱验证身份：
 
-```bash
-bash ~/.claude/skills/feedmob-publish/scripts/register.sh
-```
+https://feedmob-publish.rachel-lu.workers.dev/register
 
-按提示输入名字和邮箱，收到验证码后输入，即可获得 API Key。
+1. 输入名字和公司邮箱
+2. 收到验证码后输入
+3. 页面会显示你的 API Key（点击可复制）
 
 然后添加到 shell 配置：
 
@@ -24,6 +24,8 @@ bash ~/.claude/skills/feedmob-publish/scripts/register.sh
 echo 'export FEEDMOB_PUBLISH_KEY=<你的key>' >> ~/.zshrc
 source ~/.zshrc
 ```
+
+或者直接把 Key 粘贴给 Claude agent，它会帮你配置。
 
 ## 使用
 
@@ -33,19 +35,6 @@ source ~/.zshrc
 - "列出我发布的页面"
 - "删除某个页面"
 
-或手动调用脚本：
-
-```bash
-# 发布
-bash scripts/publish.sh ./report.html --title "月度报告"
-
-# 列表
-bash scripts/list.sh
-
-# 删除
-bash scripts/delete.sh <page_id>
-```
-
 ## 访问控制
 
-发布后的页面链接只有 @feedmob.com 邮箱才能访问（通过邮箱 OTP 验证）。
+发布后的页面链接只有 @feedmob.com 邮箱才能访问（打开链接时需要邮箱 OTP 验证，24 小时内有效）。
