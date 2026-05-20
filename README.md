@@ -35,12 +35,20 @@ source ~/.zshrc
 - "列出我发布的页面"
 - "删除某个页面"
 
+## 浏览已发布页面
+
+所有 @feedmob.com 成员可通过 Gallery 页面查看团队发布的所有内容：
+
+https://feedmob-publish.rachel-lu.workers.dev/gallery
+
+支持按作者筛选、按时间排序。
+
 ## 访问控制
 
 发布后的页面链接只有 @feedmob.com 的同事才能访问（打开链接时需要 Google 账号登录验证，24 小时内有效）。
 
 ## 管理后台
 
-管理员可通过以下页面查看发布记录和访问日志：
+管理员可通过以下页面查看发布记录、访问日志、管理用户和页面：
 
 https://feedmob-publish.rachel-lu.workers.dev/admin
